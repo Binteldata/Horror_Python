@@ -57,7 +57,7 @@ if any(word in decision.lower() for word in ["left", "left:", "open", "the", "ch
         printb("You feel a cold hand close around your throat, squeezing the air from your lungs. Panic claws at your chest as you struggle to break free. But it's too late. Darkness swallows you whole.")
         time.sleep(1)
         printc("YOU DIED! TAX EVASION IS NO JOKE!", "red")
-    elif decision.lower() == "Run towards the exit":
+    elif any(word in decision.lower() for word in ["run", "towards", "the", "exit"]):
         printb("You sprint towards the exit, your heart pounding in your chest. The darkness seems to press in on you, suffocating and thick. You can hear the sound of footsteps behind you, growing louder and closer with each passing second.")
         time.sleep(3)
         printb("You try to get up, but it's too late, a litter of golden retriever puppies runs towards you and overpower you with their cuteness. You're too mesmerized to move, as more and more pile up on your face you slowly sufficate")
