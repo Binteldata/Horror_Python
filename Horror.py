@@ -41,14 +41,14 @@ if any(word in decision.lower() for word in ["left", "left:", "open", "chest"]):
     #     # starting a fight in the jc
     # else:
     #     printc("INVALID INPUT","red")
-elif decision.lower() == "Yell for help":
+elif decision.lower() == "yell for help":
     printc("Silence. The shadows seem to writhe in response, snickering and laughing at your demise.","green")
     time.sleep(3)
     # printc("After long waiting you stopped trying and accept you can't reach that guy...","green")
     # time.sleep(3)
     # printc("WHAT DO YOU DO?", "cyan")
     # decisions 
-elif "Stay Silent" in decision.lower():
+elif "stay silent" in decision.lower():
     printc("Your silence makes the evil spirits ANGRY! Poisonous gas seeps into the room and fills yours lungs, bringing you to a slow, painful and agonizing DEATH... GAME OVER!!!","red")
     time.sleep(1)
     # printc("Every damn time youre here they let you wait, and wait, and wait for what? For like enough cash to not die in the street? MAybe? You've had enough.","orange")
