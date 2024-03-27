@@ -31,6 +31,8 @@ intro_decisions = "(Left: Open the chest/ Right: Yell for help/ Stay Silent)"
 ######## PROGRAM START #########
 printb(intro)
 time.sleep(5)
+name = input("What's your name? ")
+printc(f"Welcome, {name}!", "yellow")
 printd(intro_decisions)
 time.sleep(0.5)
 decision = input("CHOOSE: ")
@@ -44,10 +46,23 @@ if any(word in decision.lower() for word in ["left", "left:", "open", "the", "ch
     printd("Take out your phone and turn on the flashlight/ Run towards the exit", "cyan")
     decision = input("CHOOSE: ")
     if any(word in decision.lower() for word in ["take", "out", "phone", "your", "turn", "on", "flashlight"]):
-        printb()
-        # finding your agent and then stuff happens
-    elif decision.lower() == "start a fight too":
-        print()
+        printb("You fumble for your phone, your hands shaking. The screen illuminates the room in a harsh, white light. Shadows dance on the walls, twisting and contorting into grotesque shapes. You see a door at the far end of the room, its outline barely visible in the darkness.")
+        time.sleep(3)
+        printa("BOO!")
+        time.sleep(1)
+        printb("You get startled, in front of you stands a tall figure, ugly both in voice and appearance. You drop your phone and it shatters on the ground. The figure laughs, a cruel, mocking sound.")	
+        time.sleep(1)
+        printa("I'm Herr Tauber from the Finanzamt, and our records show that you haven't paid your taxes in years. You're in big trouble, my friend.")
+        time.sleep(1)
+        printb("You feel a cold hand close around your throat, squeezing the air from your lungs. Panic claws at your chest as you struggle to break free. But it's too late. Darkness swallows you whole.")
+        time.sleep(1)
+        printc("YOU DIED! TAX EVASION IS NO JOKE!", "red")
+    elif decision.lower() == "Run towards the exit":
+        printb("You sprint towards the exit, your heart pounding in your chest. The darkness seems to press in on you, suffocating and thick. You can hear the sound of footsteps behind you, growing louder and closer with each passing second.")
+        time.sleep(3)
+        printb("You try to get up, but it's too late, a litter of golden retriever puppies runs towards you and overpower you with their cuteness. You're too mesmerized to move, as more and more pile up on your face you slowly sufficate")
+        time.sleep(1)
+        printc("YOU DIED! PUPPY OVERLOAD!", "red")
         # starting a fight in the jc
     else:
         printc("INVALID INPUT", "red")
