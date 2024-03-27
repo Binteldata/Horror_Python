@@ -4,6 +4,7 @@ The air hung heavy with the stench of damp earth and decay. A throbbing headache
 
 
 * **Left: Open the chest.**  The voice chuckles, a cold, slithering sound. "Curious... very well." 
+    what do you do? --> Answer: Take out your phone and turn on the flashlight OR Run towards the exit
 * **Right: Yell for help.**  Silence. The shadows seem to writhe in response, drawing closer. 
 * **Stay Silent.**  The voice grows impatient. "Time is of the essence, little one. Choose!" 
 
