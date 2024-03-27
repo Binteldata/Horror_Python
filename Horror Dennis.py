@@ -52,7 +52,7 @@ if any(word in decision.lower() for word in ["left", "left:", "open", "the", "ch
         time.sleep(3)
         printb("You get startled, in front of you stands a tall figure, ugly both in voice and appearance. You drop your phone and it shatters on the ground. The figure laughs, a cruel, mocking sound.")	
         time.sleep(3)
-        printa(f"I'm Herr Tauber from the Finanzamt, and our records show that you haven't paid your taxes in years Mr. {name}. You're in big trouble, my friend.")
+        printa(f"I'm Herr Tauber from the Finanzamt, and our records show that you haven't paid your taxes in years Mr. {name}. You're in big trouble, my friend!")
         time.sleep(3)
         printb("You feel a cold hand close around your throat, squeezing the air from your lungs. Panic claws at your chest as you struggle to break free. But it's too late. Darkness swallows you whole.")
         time.sleep(1)
