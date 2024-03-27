@@ -4,6 +4,7 @@ The air hung heavy with the stench of damp earth and decay. A throbbing headache
 
 
 * **Left: Open the chest.**  "The voice chuckles, a cold, slithering sound. "Curious... very well." 
+    what do you do? --> Answer: Take out your phone and turn on the flashlight OR Run towards the exit
 * **Right: Yell for help.**  "Silence. The shadows seem to writhe in response, snickering and laughing at your demise." 
 * **Stay Silent.**  "Your silence makes the evil spirits ANGRY! Poisonous gas seeps into the room and fills yours lungs, bringing you to a slow, painful and agonizing DEATH... GAME OVER!!!" 
 
