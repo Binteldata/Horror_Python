@@ -118,7 +118,7 @@ while beginloop:
         continue
 playagain = input("Do you want to play again? (yes/no) ").lower()
 if playagain in ["yes", "y", "ye", "yep", "yeah"]:
-    beginloop = True
+   beginloop = True
 else:
     printc("Thank you for playing! Goodbye!", "yellow")
     beginloop = False
