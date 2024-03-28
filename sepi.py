@@ -47,6 +47,7 @@ elif "stay" in decision:
     printc("see ya soon!!!", "skyblue")
     printa("but you wanna to hear a Joke to forget that failue?")
     answer = "(yes/no)"
+    answer = input("yes or no?")
     if "y" in answer.lower() :
         joke = pyjokes.get_joke()
         printc( joke,"cyan")
