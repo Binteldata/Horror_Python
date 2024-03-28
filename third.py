@@ -24,7 +24,7 @@ def main():
    while True:
        decision = input("CHOOSE: ")
        if any(word in decision.lower() for word in ["left", "left:", "open", "chest"]):
-           printc("**The voice chuckles, a cold, raspy utterance.** So... what lies buried in the chest? Aha! You've found a clue...","green")
+           printc("The voice chuckles, a cold, diabolical sound." "Curious... very well." "what do you do?","green")
            time.sleep(2)
            printc("You gasp as you open the chest to find a book with a key hidden inside. Now if only you knew what the key is for...", "green")
            time.sleep(2)
@@ -42,38 +42,3 @@ def main():
 
 if __name__ == "__main__":
    main()
-
-part2= """With the new found key, you frantically run to the door hoping it will open the lock, only to find out that it doesn't work! You begin to cry with doubt that you will ever escape this sick, twisted game... then you realise there is a keyhole on what looks to be a hidden door on the floor..."""
-
-
-def main1():
-   printa(part2)
-   time.sleep(4)
-   printc(intro_decisions, "cyan")
-   time.sleep(0.5)
-
-   while True:
-       decision = input("CHOOSE: ")
-       if any(word in decision.lower() for word in ["left", "left:", "open", "chest"]):
-           printc("**The voice chuckles, a cold, raspy utterance.** So... what lies buried in the chest? Aha! You've found a clue...","green")
-           time.sleep(2)
-           printc("You gasp as you open the chest to find a book with a key hidden inside. Now if only you knew what the key is for...", "green")
-           time.sleep(2)
-           # ... (code for opening the chest) ...
-           break  # Exit the loop after opening the chest
-       elif any(word in decision.lower() for word in ["yell", "help", "for"]):
-           printc("Silence. The shadows seem to writhe in response, snickering and laughing at your demise.", "green")
-           time.sleep(3)
-       elif any(word in decision.lower() for word in ["stay", "silent"]):
-           printc("Your silence makes the evil spirits ANGRY! Poisonous gas seeps into the room and fills yours lungs, bringing you to a slow, painful and agonizing DEATH... GAME OVER!!!","red")
-           # ... (code for staying silent) ...
-           break  # Exit the loop after staying silent
-       else:
-           printc("INVALID INPUT.", "red")
-
-
-if __name__ == "__main1__":
-   main1()
-
-
-
