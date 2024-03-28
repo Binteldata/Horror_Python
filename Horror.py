@@ -24,38 +24,18 @@ time.sleep(3)
 printc(intro_decisions, "cyan")
 time.sleep(0.5)
 decision = input("CHOOSE: ") 
-if any(word in decision.lower() for word in ["left", "left:", "open", "chest"]):
+if any(word in decision.lower() for word in ["left", "left:", "open", "chest",]):
     printc("The voice chuckles, a cold, slithering sound." "Curious... very well." "what do you do?","green")
     printc("You gasp as you open the chest to find a book with a key hidden inside. Now if only you knew what the key is for...", "green")
     time.sleep(1)
-    # printc("You asked a random person 'Yo what were those screams?? is everyone ok?' he answered unimpressed 'ah yes someone protested against how we do things, so we... took care of him.'","green")
-    # time.sleep(3)
-    # printc("WHAT DO YOU DO?", "blue")
-    # printc("go find your agent/ start a fight too","cyan")
-    # decision = input("CHOOSE: ")
-    # if decision.lower() == "go find your agent":
-    #     print()
-    #     #finding your agent and then stuff happens
-    # elif decision.lower() == "start a fight too":
-    #     print()
-    #     # starting a fight in the jc
-    # else:
-    #     printc("INVALID INPUT","red")
-elif decision.lower() == "yell for help":
+
+elif any(word in decision.lower() for word in ["yell", "help", "for"]):
     printc("Silence. The shadows seem to writhe in response, snickering and laughing at your demise.","green")
     time.sleep(3)
-    # printc("After long waiting you stopped trying and accept you can't reach that guy...","green")
-    # time.sleep(3)
-    # printc("WHAT DO YOU DO?", "cyan")
-    # decisions 
-elif "stay silent" in decision.lower():
+  
+elif any(word in decision.lower() for word in ["stay", "silent"]):
     printc("Your silence makes the evil spirits ANGRY! Poisonous gas seeps into the room and fills yours lungs, bringing you to a slow, painful and agonizing DEATH... GAME OVER!!!","red")
     time.sleep(1)
-    # printc("Every damn time youre here they let you wait, and wait, and wait for what? For like enough cash to not die in the street? MAybe? You've had enough.","orange")
-    # time.sleep(1)
-    # printc("Your soul fills with dark anger and violence - fueled by this you storm out of that damn room and search for the first person to unload your anger upon. Ready to say: 'This is unacceptable'","red")
-    # time.sleep(3)
-    # printc("WHAT DO YOU DO?", "cyan")
-    # decisions (
+
 else:
     printc("INVALID INPUT.","red")
