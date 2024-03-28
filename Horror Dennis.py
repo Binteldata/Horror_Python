@@ -32,7 +32,6 @@ intro_decisions = "(Left: Open the chest/ Right: Yell for help/ Stay Silent)"
 ######## PROGRAM START #########
 beginloop = True
 while beginloop:
-
     printb(intro)
     time.sleep(5)
     name = input("What's your name? ")
