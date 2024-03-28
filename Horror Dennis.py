@@ -66,9 +66,9 @@ while beginloop:
                 break
             elif any(word in decision.lower() for word in ["run", "towards", "the", "exit"]):
                 printb("You sprint towards the exit, your heart pounding in your chest. The darkness seems to press in on you, suffocating and thick. You can hear the sound of footsteps behind you, growing louder and closer with each passing second.")
-                time.sleep(1)
+                time.sleep(3)
                 printb("You try to get up, but it's too late, a litter of golden retriever puppies runs towards you and overpower you with their cuteness. You're too mesmerized to move, as more and more pile up on your face you slowly sufficate")
-                time.sleep(1)
+                time.sleep(2)
                 printc("YOU DIED! PUPPY OVERLOAD!", "red")
                 #beginloop = False
                 #stillplaying1 = False
