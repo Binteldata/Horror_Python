@@ -60,9 +60,10 @@ while beginloop:
                 printa(f"I'm Herr Tauber from the Finanzamt, and our records show that you haven't paid your taxes in years Mr. {name}. You're in big trouble, my friend!")
                 time.sleep(3)
                 printb("You feel a cold hand close around your throat, squeezing the air from your lungs. Panic claws at your chest as you struggle to break free. But it's too late. Darkness swallows you whole.")
-                time.sleep(1)
+                time.sleep(2)
                 printc("YOU DIED! TAX EVASION IS NO JOKE!", "red")
                 beginloop = False
+                break
             elif any(word in decision.lower() for word in ["run", "towards", "the", "exit"]):
                 printb("You sprint towards the exit, your heart pounding in your chest. The darkness seems to press in on you, suffocating and thick. You can hear the sound of footsteps behind you, growing louder and closer with each passing second.")
                 time.sleep(1)
@@ -71,7 +72,7 @@ while beginloop:
                 printc("YOU DIED! PUPPY OVERLOAD!", "red")
                 beginloop = False
                 stillplaying1 = False
-                continue
+                break
             else:
                 printc("INVALID INPUT", "red")
                 stillplaying1 = True
