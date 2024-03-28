@@ -62,14 +62,16 @@ while beginloop:
                 printb("You feel a cold hand close around your throat, squeezing the air from your lungs. Panic claws at your chest as you struggle to break free. But it's too late. Darkness swallows you whole.")
                 time.sleep(1)
                 printc("YOU DIED! TAX EVASION IS NO JOKE!", "red")
-                stillplaying1 = False
+                beginloop = False
             elif any(word in decision.lower() for word in ["run", "towards", "the", "exit"]):
                 printb("You sprint towards the exit, your heart pounding in your chest. The darkness seems to press in on you, suffocating and thick. You can hear the sound of footsteps behind you, growing louder and closer with each passing second.")
-                time.sleep(3)
+                time.sleep(1)
                 printb("You try to get up, but it's too late, a litter of golden retriever puppies runs towards you and overpower you with their cuteness. You're too mesmerized to move, as more and more pile up on your face you slowly sufficate")
                 time.sleep(1)
                 printc("YOU DIED! PUPPY OVERLOAD!", "red")
+                beginloop = False
                 stillplaying1 = False
+                continue
             else:
                 printc("INVALID INPUT", "red")
                 stillplaying1 = True
@@ -96,10 +98,10 @@ while beginloop:
                 printb("You try to get up, but it's too late, a litter of golden retriever puppies runs towards you and overpower you with their cuteness. You're too mesmerized to move, as more and more pile up on your face you slowly sufficate")
                 time.sleep(1)
                 printc("YOU DIED! PUPPY OVERLOAD!", "red")
-                stillplaying = False
+                stillplaying1 = False
             else:
                 printc("INVALID INPUT", "red")
-                stillplaying = True
+                stillplaying1 = True
             # decisions 
         elif "wait" in decision.lower():
             printc("After a long and polite waiting time, you feel how the injustice of this whole situation begins to corrupt you.", "green")
@@ -110,14 +112,14 @@ while beginloop:
             time.sleep(3)
             printc("WHAT DO YOU DO?", "cyan")
             # decisions (
-        else:
-            printc("INVALID INPUT.", "red")
-            beginloop = True
-        
-            playagain = input("Do you want to play again? (yes/no) ").lower()
-            if playagain in ["yes", "y", "ye", "yep", "yeah"]:
-                beginloop = True
-            else:
-                printc("Thank you for playing! Goodbye!", "yellow")
-                beginloop = False
+    else:
+        printc("INVALID INPUT.", "red")
+        continue
+playagain = input("Do you want to play again? (yes/no) ").lower()
+if playagain in ["yes", "y", "ye", "yep", "yeah"]:
+    beginloop = True
+else:
+    printc("Thank you for playing! Goodbye!", "yellow")
+    beginloop = False
+
 
