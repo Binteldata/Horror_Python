@@ -1,5 +1,6 @@
 from stringcolor import cs 
 import time
+import pyjokes
 
 def printc(string, color="white"):
     # string first, then color optional - default white
@@ -10,6 +11,7 @@ def printa(string, color="red"):
 
 def printx(string, color="green"):
     print(cs(string,color))
+
 
 
 
@@ -47,3 +49,6 @@ elif "stay" in decision:
 else:
     printc("wrong answer, eliminated!!", "red")
     printa("that was great to paying with you,hope see you soon again!!!", color= "yellow")
+    printa("but here is a joke to make you laugh :D")
+    joke = pyjokes.get_joke()
+    printc(joke , "cyan")
