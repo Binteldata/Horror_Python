@@ -45,10 +45,21 @@ elif "stay" in decision:
     printc("Your silence makes the evil spirits ANGRY! Poisonous gas seeps into the room and fills yours lungs, bringing you to a slow, painful and agonizing DEATH... GAME OVER!!!", "darkred")
     time.sleep(3)
     printc("see ya soon!!!", "skyblue")
+    printa("but you wanna to hear a Joke to forget that failue?")
+    answer = "(yes/no)"
+    if "y" in answer.lower() :
+        joke = pyjokes.get_joke()
+        printc( joke,"cyan")
+    else:
+        printa("okay,ciao")
 
 else:
     printc("wrong answer, eliminated!!", "red")
-    printa("that was great to paying with you,hope see you soon again!!!", color= "yellow")
+    time.sleep(2)
+    printa("that was great to palying with you,hope see you soon again!!!", color= "yellow")
+    time.sleep(2)
     printa("but here is a joke to make you laugh :D")
+    time.sleep(3)
     joke = pyjokes.get_joke()
+    time.sleep(3)
     printc(joke , "cyan")
